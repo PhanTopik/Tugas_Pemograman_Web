@@ -1,3 +1,12 @@
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 10) {
+        nav.classList.add('blur');
+    } else {
+        nav.classList.remove('blur');
+    }
+});
+
 const scheduleData = [
     { day: 'Senin', code: 'TIF3103', course: 'Desain Interaksi', room: 'C-101', sks: 2, time: '10.30-12.10', type: 'MKWU', lecturers: ['Fanindia Purnamasari S.TI., M.IT'] },
     { day: 'Senin', code: 'IKL2107', course: 'Praktikum Pemograman Web', room: 'Lab 2', sks: 2, time: '14.50-16.30', type: 'REGULER', lecturers: ['Nurrahmadayeni M.Kom'] },
@@ -92,4 +101,37 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     fotoProfil.classList.add('muncul');
 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-animate");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const hiddenElements = document.querySelectorAll(".hidden");
+  hiddenElements.forEach(el => observer.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toTopBtn = document.getElementById("toTopBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 50) {
+      toTopBtn.classList.add("show");
+    } else {
+      toTopBtn.classList.remove("show");
+    }
+  });
+
+  toTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });

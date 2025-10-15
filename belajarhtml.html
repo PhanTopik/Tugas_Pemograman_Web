@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Tugas Pemograman Web</title>
+        <link rel="stylesheet" href="css_tugas_personal_profie.css">
+        <script src="jadwal.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav>
+        <h2 class="judul">My Website</h2>
+        <ul>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#foto_profile">About Me</a></li>
+            <li><a href="#judul_tabel">Schedule</a></li>
+            <li><a href="#ikon-container">Contact</a></li>
+        </ul>
+        </nav>
+
+        <h1 id="learn"> Mengenal HTML, CSS, Javascript dan Tailwind </h1>
+        <div id="list_mengenal" class="hidden">
+            
+            <div id="html">
+                <h2>HTML (Hypertext Markup Language)</h2>
+                <p>HTML adalah bahasa markup standar untuk membuat dan menata konten halaman web.
+                HTML berfungsi sebagai kerangka dasar untuk website, menggunakan tag-tag untuk mendefinisikan struktur seperti judul, paragraf, gambar, dan tautan.</p>
+            </div>
+
+            <div id="css">
+                <h2>CSS (Cascading Style Sheets)</h2>
+                <p>CSS adalah adalah bahasa stylesheet yang digunakan untuk mendeskripsikan tampilan dokumen, seperti situs web, yang ditulis dalam bahasa markup seperti HTML atau XML
+                ibaratkan kita yang memakai baju yang bagus agar terlihat rapi dan bagus.
+                </p>
+            </div>
+
+            <div id="javascript">
+                <h2> JavaScript</h2>
+                <p>bahasa pemrograman yang digunakan untuk membuat halaman web interaktif dan dinamis, memungkinkan fitur seperti animasi, 
+                pembaruan konten secara real-time, dan interaksi pengguna lainnya. Bisa kita ibaratkan sebagai Sistem Syaraf dalam tubuh kita
+                yang bertugas membuat interaksi dan gerakan pada kita.</p>
+            </div>
+
+            <div id="tailwind">
+                <h2>Tailwind</h2>
+                <p>Tailwind adalah framework CSS utility-first yang memungkinkan pengembang membuat desain kustom langsung di markup HTML
+                menggunakan kelas-kelas utilitas yang sudah ditentukan sebelumnya</p>
+            </div>
+        </div>
+
+        <h1 id="jdl_tutorial" class="hidden">Cara Membuat Website Sederhana</h1>
+        <div id="tutorial" class="hidden">
+            <ol>
+                <li>Download aplikasi VS code dan ekstension HTML ,CSS ,Javascript ,dan Tailwind untuk membuat web</li>
+                <li>buat folder untuk menampung program website kamu yang berisi file index.html ,style.css ,script.js ,dan folder img agar tidak berantakan</li>
+                <li>lalu selanjutnya maasukan kode untuk membuat website</li>
+            </ol>
+            <pre>
+                <code class="language-html">
+    &lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Website Sederhana&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;header&gt;
+    &lt;h1&gt;Website Sederhana Saya&lt;/h1&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;h2&gt;Selamat Datang!&lt;/h2&gt;
+    &lt;p&gt;Ini contoh website sederhana menggunakan HTML, CSS, dan JavaScript.&lt;/p&gt;
+
+    &lt;div class="card"&gt;
+      &lt;h3&gt;Kartu Informasi&lt;/h3&gt;
+      &lt;p&gt;Klik tombol di bawah untuk interaksi sederhana.&lt;/p&gt;
+      &lt;button id="klikTombol"&gt;Klik Saya&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &copy; 2025 Contoh Website
+  &lt;/footer&gt;
+
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+            <h3>List Tag dasar yang wajib ada</h3>
+            <ul>
+                <li>!DOCTYPE html: ini berfungsi sebagai deklarasi atau instruksi untuk browser</li>
+                <li>html: ini berfungsi sebagai tag pembuka dari keseluruhan dokumen HTML</li>
+                <li>head:  Bagian ini berisi metadata atau informasi tentang dokumen HTML, bukan konten yang akan ditampilkan di halaman.</li>
+                <li>meta charset="UTF-8":  untuk  Menentukan set karakter yang digunakan.</li>
+                <li>meta name="viewport" content="width=device-width, initial-scale=1.0": untuk desain responsif.</li>
+                <li>title: untuk Menentukan judul halaman yang akan muncul di tab browser, bookmark, dan hasil pencarian.</li>
+                <li>link rel="stylesheet" href="style.css": untuk Menghubungkan file HTML dengan file CSS eksternal untuk mengatur gaya (tampilan) halaman (Hanya digunakan jika mau menghubungkan dengan file eksternal).</li>
+                <li>Body: bagian yang berisi semua konten yang terlihat oleh pengunjung halaman web.</li>
+            </ul>
+            <h2>Sekarang anda bisa mencobanya Sendiri setelah mengetahui cara membuat website sederhana</h2>
+            <hr>
+            <div id="recomend">
+                <h2>Rekomendasi Chanel Youtube untuk belajar Pemograman Web</h2>
+                <h3>Channel ini memberi pembelajaran untuk membuat website.Disini kalain bisa belajar HTML ,CSS ,JavaScript, Tailwind ,dan lain-lain.</h3>
+                <div id="channel-info" class="hidden">
+                <a href="https://youtube.com/@sandhikagalihwpu?si=tBYN00AwnnZgvR4W" target="_blank">
+                    <img id="channel" class="hidden" src="img/foto_wpu.jpg" alt="Foto Channel WPU">
+                </a>
+                <div id="text-info">
+                    <h2>WPU</h2>
+                    <h3>976 rb subscriber</h3>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+       <div id="foto_profile">
+            <img id="foto_profil_saya" src="img/foto.png" alt="foto profil" width="200">
+            <div class="profile_info">  
+                <h3>Phan Topik</h3>
+                <h3>NIM: 24140154</h3>
+                <h3>KOM: C</h3>
+                <h3><span>Status: </span>
+                <a href="https://www.usu.ac.id/" target="_blank" class="status">Mahasiswa Aktif</a>
+                </h3>
+                <h3>Motto hidup: teruslah berusaha mengasah diri sendiri agar tidak menyesal dikemudian hari</h3>
+            </div>
+        </div>
+        <h3 class="profile_info">halo pekenalkan nama saya Phan Topik saya itu adalah mahasiswa dari univeristas sumatera utara
+        di fakultas ilmu komputer dan teknologi informasi dan dari prodi ilmu komputer saya masuk jurusan ini karena tertarik pada kodingan.
+        sekarang saya sedang aktif berorganisasi di KMB dan IMILKOM.</h3>
+
+        <br> <br>
+
+        <h2 id="judul_tabel"> Jadwal Mata Kuliah USU Semester 3 Tahun 2025</h2>
+        <hr>
+        
+        <div id="schedule-container" class="hidden"></div>
+
+        <br><br><br>
+        <div id="kesan_pesan" class="hidden">
+            <div id="kesan">
+            <h2>Kesan Saya selama Belajar Pemograman Web</h2>
+            <p>Saya merasa bahwa Pemograman web itu menyenangkan karena di dunia teknologi ini web hampir
+                tidak bisa lepas di kehidupan sehari-hari dimana kita banyak melakukan aktivitas dengan web.
+                Disini saya pengen belajar pemograman agar saya bisa memogram web atau aplikasi saya sendiri
+                dimana saya bersemangat dimana saya bisa membuat website saya sendiri.
+            </p>
+            </div>
+            <div id="pesan">
+                <h2>Pesan Saya selama Belajar Pemograman Web</h2>
+                <ul>
+                    <li>Jangan Pernah Takut gagal: Karena setiap hidup kita pasti ada kegagalan.</li>
+                    <li>Selalu latihan skill kita karena skill  kita ibaratkan mata pisau yang jika kita tidak asah maka akan tumpul juga</li>
+                    <li>Selalu perbagus skill diri kita sendiri di dunia yang canggih teknologi selalu berkembang yang mendorong kita untuk belajar hal baru</li>
+                </ul>
+            </div>
+        </div>
+        <div id="ikon-container" class="hidden">
+            <div class="gambar">
+                <a href="https://wa.me/6281265584926" target="_blank"><img src="img/Logo_whatsapp.png" alt="Logo Whatsapp" width="80"></a>
+                <h4>Hubungi saya </h4>
+            </div>
+
+            <div class="gambar">
+                <a href="https://www.instagram.com/invites/contact/?igsh=7vqiu8qr1rik&utm_content=3p9czgc" target="_blank"><img src="img/logo_ig.png" alt="Logo Instagram" width="80"></a>
+                <h4>Follow Instagram saya 
+                </h4>
+            </div>
+
+            <div class="gambar">
+                <a href="https://www.tiktok.com/@phan.topik?_t=ZS-8zbYh7FeaGG&_r=1" target="_blank"><img src="img/Logo_tiktok.png" alt="Logo TikTok" width="80"></a>
+                <h4>Follow TikTok saya 
+                </h4>
+            </div>
+        </div>
+        <button id="toTopBtn" title="Kembali ke atas">⬆</button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    </body>
+</html>
